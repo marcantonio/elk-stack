@@ -1,0 +1,15 @@
+{
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "name": "elkstack-all-in-one",
+    "run_list": [
+        "role[elasticsearch-node]",
+        "role[logstash-node]",
+        "role[kibana-node]"
+    ],
+    "default_attributes": {
+        "java": {
+            "jdk_version": "7"
+        }
+    }
+}

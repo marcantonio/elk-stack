@@ -1,0 +1,14 @@
+{
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "name": "logstash-node",
+    "run_list": [
+        "recipe[elkstack::logstash]"
+    ],
+    "default_attributes": {
+        "rsyslog": {
+            "server_ip": "127.0.0.1",
+            "port": "1514"
+        }
+    }
+}

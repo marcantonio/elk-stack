@@ -1,0 +1,13 @@
+{
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "name": "kibana-node",
+    "run_list": [
+        "recipe[elkstack::kibana]"
+    ],
+    "default_attributes": {
+        "kibana": {
+            "es_server": "127.0.0.1"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "chef_type": "role",
+    "json_class": "Chef::Role",
+    "name": "elasticsearch-node",
+    "run_list": [
+        "recipe[monit]",
+        "recipe[elkstack::elasticsearch]"
+    ],
+    "default_attributes": {
+        "elasticsearch" : {
+            "version" : "1.4.4"
+        }
+    }
+}
